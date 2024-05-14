@@ -38,7 +38,6 @@ This platform provides a seamless and secure way to book movie tickets online. W
 ### Documents & Resources
 
 - **DB Schema** - [Check](https://app.eraser.io/workspace/freVQPx2kKihWa6JRkm3?elements=Eb7gNhDD2cNNixTv2wKuBw)
-- **User Interfaces Design** - [Check](https://app.eraser.io/workspace/freVQPx2kKihWa6JRkm3?elements=o9i9GZu08Yh4SsWWOWHnGw)
 
 
 ## Screenshots
