@@ -1,0 +1,25 @@
+.booked-seats{
+	-fx-background-color : "grey";
+	-fx-background-radius: 20.0;
+	-fx-pref-width: 80px;
+	-fx-pref-height: 80px;
+	-fx-text-fill: "white";
+}
+.available-seats{
+	-fx-background-color : "green";
+	-fx-background-radius: 20.0;
+	-fx-pref-width: 80px;
+	-fx-pref-height: 80px;
+	-fx-text-fill: "white";
+}
+.available-seats:hover{
+	-fx-opacity : 0.8;
+	-fx-cursor: hand;
+	-fx-effect: dropshadow(three-pass-box , green, 5, 0.5, 2, 2) dropshadow(three-pass-box , green, 5, 0.5, -2, -2);
+}
+.selected-seats{
+	-fx-background-color : "blue";
+}
+.selected-seats:hover{
+	-fx-effect: dropshadow(three-pass-box , blue, 5, 0.5, 2, 2) dropshadow(three-pass-box , blue, 5, 0.5, -2, -2)
+}

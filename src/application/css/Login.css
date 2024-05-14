@@ -1,0 +1,16 @@
+#loginFormContainer {
+	-fx-background-color: rgb(19.0, 13.0, 14.0);
+    -fx-background-radius: 24.0px;
+    -fx-border-radius: 24.0px;
+    -fx-opacity: 0.9;
+}
+#inputLoginEmailField {
+	-fx-background-color: #ffffff;
+}
+#inputLoginPasswordField {
+	-fx-background-color: #ffffff;
+}
+#btnLogin {
+	-fx-text-fill: #ffffff;
+	-fx-background-color: #E50913;
+}

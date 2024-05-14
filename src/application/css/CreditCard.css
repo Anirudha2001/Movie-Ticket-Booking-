@@ -1,0 +1,19 @@
+.CreditCardContainer {
+    -fx-background-color: rgb(77,15,0);
+}
+
+.middleContainer {
+    -fx-background-color: white;
+    -fx-background-radius: 30;
+}
+
+.pinContainer {
+    -fx-background-color: white;
+    -fx-border-width: 0 0 3 0;
+    -fx-border-color:  #9a9a9a;
+}
+
+.paybuttons {
+    -fx-background-color: rgb(77,15,0);
+    -fx-background-radius: 20;
+}

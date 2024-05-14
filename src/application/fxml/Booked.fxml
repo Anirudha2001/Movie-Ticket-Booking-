@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="downloadTicketBt" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1200.0" style="-fx-background-color: #1f1f1f; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.Booked">
+   <children>
+      <Label alignment="CENTER" layoutX="479.0" layoutY="41.0" prefHeight="57.0" prefWidth="297.0" style="-fx-background-color: green; -fx-background-radius: 15;" text="Ticket Booked Successfully" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="528.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-y: 12;">
+         <image>
+            <Image url="@../resources/checked.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="15.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-y: 15; -fx-translate-x: 15;">
+         <image>
+            <Image url="@../resources/icon.png" />
+         </image>
+      </ImageView>
+      <Button alignment="BOTTOM_LEFT" layoutX="547.0" layoutY="481.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: red; -fx-background-radius: 10;" text="Go Back Home" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="419.0" layoutY="407.0" text="Please check your mail for more details" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="downloadTicketBtn" alignment="BOTTOM_LEFT" layoutX="542.0" layoutY="566.0" mnemonicParsing="false" onAction="#downloadTicket" style="-fx-background-color: blue; -fx-background-radius: 10;" text="Download Ticket" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

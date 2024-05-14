@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model ?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="1200.0" style="-fx-background-color: #1F1F1F;" stylesheets="@../css/Analytics.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.Analytics">
+   <children>
+      <AnchorPane fx:id="anchorContainerTotalSoldTicket" layoutX="64.0" layoutY="64.0" prefHeight="150.0" prefWidth="250.0" AnchorPane.leftAnchor="64.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="20.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/analytics-ticket-icon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="totalTicketsSoldLabel" layoutX="147.0" layoutY="43.0" text="136" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="56.0" />
+               </font>
+            </Label>
+            <Line endX="16.0" endY="160.0" layoutX="120.0" layoutY="-9.0" startX="16.0" startY="10.0" stroke="#666666" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorContainerTotalRevenue" layoutX="464.0" layoutY="64.0" prefHeight="150.0" prefWidth="300.0" AnchorPane.leftAnchor="464.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="21.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/analytics-money-icon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="totalRevenueAmountLabel" layoutX="150.0" layoutY="46.0" text="2,543" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="56.0" />
+               </font>
+            </Label>
+            <Line endX="16.0" endY="160.0" layoutX="121.0" layoutY="-9.0" startX="16.0" startY="10.0" stroke="#666666" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorContainerTotalAvailableMovies" layoutX="864.0" layoutY="64.0" prefHeight="150.0" prefWidth="250.0" AnchorPane.leftAnchor="864.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="24.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/analytics-movies-icon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="availableMoviesLabel" layoutX="155.0" layoutY="48.0" text="51" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="56.0" />
+               </font>
+            </Label>
+            <Line endX="16.0" endY="160.0" layoutX="127.0" layoutY="-8.0" startX="16.0" startY="10.0" stroke="#666666" />
+         </children>
+      </AnchorPane>
+      <Label contentDisplay="CENTER" layoutX="90.0" layoutY="225.0" style="-fx-background-color: #2f243a; -fx-padding: 4 12; -fx-background-radius: 8;" text="Total Tickets Sold" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="510.0" layoutY="225.0" style="-fx-background-color: #2f243a; -fx-padding: 4 12; -fx-background-radius: 8;" text="Total Revenue (Rs.)" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="897.0" layoutY="225.0" style="-fx-background-color: #2f243a; -fx-padding: 4 12; -fx-background-radius: 8;" text="Available Movies" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="pieChart" clockwise="false" focusTraversable="true" labelsVisible="false" layoutX="24.0" layoutY="350.0" legendSide="TOP" prefHeight="350.0" prefWidth="350.0" style="-fx-background-radius: 16;" AnchorPane.leftAnchor="24.0" />
+      <Label contentDisplay="CENTER" layoutX="116.0" layoutY="700.0" style="-fx-background-color: #2f243a; -fx-padding: 4 12; -fx-background-radius: 8;" text="Seats Booked" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <LineChart fx:id="lineChart" layoutX="500.0" layoutY="350.0" legendVisible="false" prefHeight="350.0" prefWidth="625.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label contentDisplay="CENTER" layoutX="717.0" layoutY="702.0" style="-fx-background-color: #2f243a; -fx-padding: 4 12; -fx-background-radius: 8;" text="Tickets Booked (Daily)" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

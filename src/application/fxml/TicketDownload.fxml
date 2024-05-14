@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model ?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="700.0" minWidth="1200.0" onMouseEntered="#readTicketData" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.TicketDownloadController">
+   <children>
+      <AnchorPane layoutX="50.0" layoutY="100.0" prefHeight="223.0" prefWidth="791.0">
+         <children>
+            <ImageView fitHeight="223.0" fitWidth="697.0">
+               <image>
+                  <Image url="@../resources/ticket_background_4.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="61.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Theater Name" wrappingWidth="200.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="365.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date &amp; Time" wrappingWidth="117.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="204.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie Name" wrappingWidth="144.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="27.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="-27.0" layoutY="159.0" rotate="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket No : " wrappingWidth="104.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="93.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seat No :" wrappingWidth="117.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="status1" fill="WHITE" layoutX="457.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="InValid" wrappingWidth="70.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="389.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status :" wrappingWidth="70.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="554.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie :" wrappingWidth="51.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="554.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seat No : " wrappingWidth="58.2861328125">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="554.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket No : " wrappingWidth="70.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="553.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date : " wrappingWidth="40.2861328125">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="seat_no1" fill="WHITE" layoutX="93.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1,2,3,4,5" wrappingWidth="89.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="booking_date1" fill="WHITE" layoutX="379.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01/01/24" wrappingWidth="89.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="ticket_no1" fill="WHITE" layoutX="-31.0" layoutY="60.0" rotate="270.0" smooth="false" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="12345" textAlignment="CENTER" wrappingWidth="111.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="23.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Text>
+            <Text fx:id="booking_date2" fill="WHITE" layoutX="589.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01/02/2024" wrappingWidth="89.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="booking_time1" fill="WHITE" layoutX="379.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00" wrappingWidth="89.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="seat_no2" fill="WHITE" layoutX="606.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="144.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="ticket_no2" fill="WHITE" layoutX="615.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="70.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Text>
+            <AnchorPane fx:id="anchorpane" layoutX="697.0" layoutY="1.0" prefHeight="222.0" prefWidth="58.0" style="-fx-background-color: #22252F;">
+               <children>
+                  <Text fx:id="status2" fill="WHITE" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="valid" wrappingWidth="58.2861328125">
+                     <font>
+                        <Font name="Calibri Bold" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Text fill="WHITE" layoutX="551.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Time : " wrappingWidth="40.2861328125">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="booking_time2" fill="WHITE" layoutX="594.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00" wrappingWidth="59.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="645.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status : " wrappingWidth="51.240234375">
+               <font>
+                  <Font name="Calibri Bold" size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

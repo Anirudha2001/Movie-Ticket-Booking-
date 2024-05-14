@@ -1,0 +1,11 @@
+.selectPaymentContainer {
+    -fx-background-color: rgb(19.0, 13.0, 14.0);
+}
+.middleContainer {
+    -fx-background-color: white;
+    -fx-background-radius: 30.0;
+}
+.PaymentButton {
+    -fx-background-color: black;
+    -fx-background-radius: 30.0;
+}

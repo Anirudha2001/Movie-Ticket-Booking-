@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?xml-model ?>
+
+<AnchorPane minHeight="700.0" minWidth="1200.0" style="-fx-background-color: #778da9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.MovieStatusController">
+   <children>
+      <AnchorPane minHeight="700.0" minWidth="1200.0" style="-fx-background-color: #778da9;">
+         <children>
+            <VBox prefHeight="581.0" prefWidth="944.0" spacing="50.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox prefHeight="327.0" prefWidth="1168.0">
+                     <children>
+                        <Pane fx:id="movieImg" prefHeight="303.0" prefWidth="1194.0">
+                           <children>
+                              <HBox alignment="CENTER" layoutX="59.0" layoutY="2.0" prefHeight="303.0" prefWidth="921.0" spacing="50.0">
+                                 <children>
+                                    <ImageView fx:id="moviePoster" fitHeight="313.0" fitWidth="354.0" pickOnBounds="true" />
+                                    <VBox alignment="CENTER_LEFT" prefHeight="315.0" prefWidth="444.0" spacing="20.0">
+                                       <children>
+                                          <Text fx:id="movieTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="506.13671875">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="movieRating" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" wrappingWidth="394.6699843406677">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description : " wrappingWidth="113.13671875">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets bottom="100.0" left="10.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </HBox>
+                              <Text fx:id="movieDescription" layoutX="588.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="519.13671875">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="339.0" prefWidth="944.0">
+                     <children>
+                        <Pane prefHeight="339.0" prefWidth="641.0">
+                           <children>
+                              <Text fx:id="movieGener" layoutX="71.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="144.0" />
+                              <Text fx:id="movieReleaseDate" layoutX="119.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.13671875" />
+                              <Text fx:id="movieAvailableSeat" layoutX="124.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="108.13671875" />
+                              <Text fx:id="movieNextShow" layoutX="102.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="390.13671875" />
+                              <Text fx:id="movieActors" layoutX="74.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="374.13671875" />
+                              <Text layoutX="15.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gener :" wrappingWidth="52.13671875">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="15.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Release Date : " wrappingWidth="103.13671875">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="15.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Seat : " wrappingWidth="108.13671875">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="15.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Next Show :" wrappingWidth="90.13671875">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="15.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Actors :" wrappingWidth="65.13671875">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="331.0" prefWidth="350.0">
+                           <children>
+                              <Text layoutX="32.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Class : " wrappingWidth="78.13671875">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="111.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket" textAlignment="CENTER" wrappingWidth="101.13671875">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="32.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Second Class : " wrappingWidth="101.13671874999989">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="32.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Base Class : " wrappingWidth="86.13671875">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="bookTicketButtonClicked" layoutX="32.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleBookTicketBtnClicked" prefHeight="30.0" prefWidth="116.0" text="Book Ticket">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Text layoutX="133.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="123.99999999999989">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="baseClassTicket" layoutX="118.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100 Rs / per Person " wrappingWidth="143.9999999999999">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="secondClassTicket" layoutX="128.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="150 Rs / per person" wrappingWidth="134.9999999999999">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="firstClassTicket" layoutX="111.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="200 Rs / per person" wrappingWidth="144.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="goBackButtonClicked" layoutX="174.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleBackBtnClicked" prefHeight="30.0" prefWidth="116.0" text="Go Back">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</AnchorPane>

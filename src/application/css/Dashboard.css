@@ -1,0 +1,15 @@
+#dashboardGrid {
+	-fx-background-color: #1F1F1F;	
+}
+#dashboardAnchoreContainer {
+	-fx-background-color: #c1121f;	
+}
+#dashboardBtn,
+#moviesBtn,
+#bookingsBtn,
+#usersBtn,
+#logoutBtn {
+	-fx-background-color: #000000;
+	-fx-background-radius: 12.0;	
+	-fx-cursor: hand;
+}

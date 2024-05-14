@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model ?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="1200.0" style="-fx-background-color: #1F1F1F;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="498.0" layoutY="328.0" text="Users Screen" textFill="RED" AnchorPane.leftAnchor="498.0">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

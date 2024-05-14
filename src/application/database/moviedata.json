@@ -1,0 +1,13 @@
+{
+  "id": 0,
+  "price": 700,
+  "basePrice": 0,
+  "totalPrice": 0,
+  "name": "",
+  "timing": "",
+  "selected": "1G",
+  "bookedSeats": [],
+  "selectedSeats": [
+    "1G"
+  ]
+}

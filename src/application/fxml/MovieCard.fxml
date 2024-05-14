@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?xml-model ?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#click" pickOnBounds="false" prefHeight="335.0" prefWidth="251.0" style="-fx-background-color: #011522;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.MovieCardController">
+   <children>
+      <AnchorPane fx:id="MovieImgContainer" prefHeight="234.0" prefWidth="251.0" style="-fx-background-color: #011522;" AnchorPane.bottomAnchor="101.0">
+         <children>
+            <ImageView fx:id="setMovieImg" fitHeight="226.0" fitWidth="241.0" layoutX="14.0" layoutY="33.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+         </children></AnchorPane>
+      <Text fx:id="setMovieName" fill="WHITE" layoutX="14.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie Name" wrappingWidth="137.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="17.0" fitWidth="22.0" layoutX="174.0" layoutY="247.0">
+         <image>
+            <Image url="@../resources/star.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="setMovieRating" fill="WHITE" layoutX="204.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" wrappingWidth="61.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="setMovieGener" fill="WHITE" layoutX="14.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genre" wrappingWidth="107.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="setMovieReleaseDate" fill="WHITE" layoutX="153.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Release Date" wrappingWidth="87.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+</AnchorPane>

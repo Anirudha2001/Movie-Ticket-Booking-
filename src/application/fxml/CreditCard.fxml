@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="parentcomponent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1200.0" prefHeight="400.0" prefWidth="600.0" styleClass="CreditCardContainer" stylesheets="@../css/CreditCard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.CreditCard">
+   <children>
+      <AnchorPane fx:id="childcomponent" layoutX="30.0" layoutY="43.0" prefHeight="646.0" prefWidth="483.0" styleClass="middleContainer">
+         <children>
+            <ImageView fitHeight="74.0" fitWidth="279.0" layoutX="282.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/visa.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="21.0" layoutY="236.0" prefHeight="417.0" prefWidth="442.0">
+               <children>
+                  <TextField fx:id="CreditCardInput" layoutX="23.0" layoutY="58.0" onKeyReleased="#CreditInputHandler" prefHeight="25.0" prefWidth="384.0" styleClass="pinContainer">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets bottom="4.0" />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="Expiryinput" layoutX="19.0" layoutY="176.0" onKeyPressed="#ExpiryInputHandler" prefHeight="33.0" prefWidth="173.0" styleClass="pinContainer">
+
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <Text fill="#8a8787" layoutX="23.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expiration Date" wrappingWidth="164.759765625">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#8a8787" layoutX="23.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit card" wrappingWidth="327.13671875">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#8a8787" layoutX="237.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CVV">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="Paybutton" layoutX="80.0" layoutY="240.0" mnemonicParsing="false" onAction="#PaybuttonHandler" onMouseEntered="#Handlehover" onMouseExited="#Handleexit" prefHeight="52.0" prefWidth="273.0" styleClass="paybuttons" text="Pay" textFill="#fff9f9">
+                     <font>
+                        <Font name="System Italic" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Cancelbutton" layoutX="83.0" layoutY="327.0" mnemonicParsing="false" onAction="#HandleCancelButton" onMouseEntered="#Handlehover" onMouseExited="#Handleexit" prefHeight="25.0" prefWidth="273.0" styleClass="paybuttons" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="25.0" />
+                     </font>
+                  </Button>
+                  <PasswordField fx:id="CVVInput" layoutX="237.0" layoutY="176.0" onKeyTyped="#CVVHandler" prefHeight="33.0" prefWidth="184.0" styleClass="pinContainer">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </PasswordField>
+                  <Text fx:id="Validity" fill="RED" layoutX="23.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Valid Information" wrappingWidth="360.13671875">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="106.0" prefHeight="85.0" prefWidth="483.0" style="-fx-background-color: gray;">
+               <children>
+                  <Text layoutX="26.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="26.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sending:" wrappingWidth="125.0595703125">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="347.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CINEMANIA">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="MoviePrice" layoutX="360.0" layoutY="47.0" prefHeight="17.0" prefWidth="100.0" text="\$ 100.00">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   </children>
+</Pane>

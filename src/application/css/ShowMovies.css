@@ -1,0 +1,27 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+  /* 
+   	-fx-background-color: -fx-app-background;
+	-fx-background-color: blue; 
+  	-fx-rotate: 180;
+	-fx-transform: rotateY(180deg);	
+	dropshadow : <blur-type> = [ gaussian | one-pass-box | three-pass-box | two-pass-box ]  
+    */
+
+#anchor{
+	-fx-background-radius: 10;  /*top-left , top-right , bottom-right , bottom-left */
+	-fx-effect: dropshadow(three-pass-box , grey, 10, 0.5, 3, 3); /* width, opacity ,x-move , y-move*/
+}
+#anchor:hover {	
+  	-fx-translate-y: -10; 
+    -fx-scale-x: 1.05; 
+}
+#setMovieImg{
+    -fx-fit-to-width: 100%;
+    -fx-fit-to-height: 100%;
+    
+}
+#MovieImgContainer{
+	-fx-background-radius: 10 10 0 0;	
+	-fx-background-color:  #011522;
+}
